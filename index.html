@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sexy Coders</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="">
+                <img src="assets/logo.svg" alt="logo" width="228" height="98">
+            </a>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="https://docs.python.org/3/">Python Docs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <button class="Join-button" id="Join-button" onclick="window.location.href='#';">Contact</button>
+        </nav>
+    </header>
+    <div>
+        <img src="assets/hero.svg" alt="hero" id="hero">
+    </div>
+    <div class="Intro">
+        <!--Typing effect-->
+        <h1>
+            <span class="text-slider-items"> 
+                Coding is the new sexy, Learn Python with sexy people now
+            </span> 
+            <strong class="text-slider"></strong> 
+        </h1>
+
+        <p>At Sexy Coders Academy, we aim for the development of students' skills in Programming. We offer a Free online beginner course in Python, which not only eases you into the programmimg society, but also makes you sexier in the eyes of the ladies or guys.</p>
+    </div>
+    <div class="typing-animation">
+        <span id="quote"></span>
+      </div>
+    <div class="buttons">
+        <button class="Upcoming-events" onclick="window.location.href='#';">Get started</button>
+        <button class="Explore-projects" onclick="window.location.href='#';">Proficiency test</button>
+        <button class="Join-button-2" id="Join-button-2" onclick="window.location.href='#';">Contact</button>
+    </div>
+
+    <!-- Import typed.min.js file from typed.js folder -->
+    <script src="./typed.js-master/lib/typed.min.js"></script> 
+      
+    <!-- Add jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  
+    <!-- Add this script for successful  
+        implementation of typed.js  -->
+    <script> 
+        if ($(".text-slider").length == 1) { 
+              
+            var typed_strings =  
+                $(".text-slider-items").text(); 
+  
+            var typed = new Typed(".text-slider", { 
+                strings: typed_strings.split(", "), 
+                typeSpeed: 50, 
+                loop: false, 
+                backDelay: 2000, 
+                backSpeed: 30, 
+            }); 
+        } 
+    </script>
+
+    <footer>
+        <p>Copyright © 2020 Sexy Coders</p>
+    </footer>
+
+</body>
+</html>
