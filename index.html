@@ -32,11 +32,14 @@
 
             <ul class="nav-ul" id="nav-ul">
                 <li><a href="#">Tutorials</a></li>
-                <li><a href="https://docs.python.org/3/">Python Docs</a></li>
+                <li><a href="./docs/index.html">Python Docs</a></li>
                 <li><a href="https://tdung939.github.io/sexy_coders_blog/">Blog</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-            <button class="Join-button" id="Join-button" onclick="window.location.href='#';">Contact</button>
+            <div class="small-buttons">
+                <button class="small-button" id="sign-up-button" onclick="window.location.href='#';">Sign up</button>
+                <button class="small-button" id="sign-in-button" onclick="window.location.href='#';">Sign in</button>
+            </div>
         </nav>
     </header>
     <div>
@@ -46,7 +49,7 @@
         <!--Typing effect-->
         <h1>
             <span class="text-slider-items"> 
-                Coding is the new sexy, Learn sexy Python now
+                Coding is the new sexy
             </span> 
             <strong class="text-slider"></strong> 
         </h1>
@@ -79,8 +82,8 @@
             var typed = new Typed(".text-slider", { 
                 strings: typed_strings.split(", "), 
                 typeSpeed: 50, 
-                loop: false, 
-                backDelay: 2000, 
+                loop: true, 
+                backDelay: 5000, 
                 backSpeed: 30, 
             }); 
         } 

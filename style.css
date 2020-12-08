@@ -70,7 +70,7 @@ h1 {
     margin-left: 150px;
     margin-bottom: 10px;
 
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 h1:hover {
@@ -79,8 +79,10 @@ h1:hover {
     background-color: black;
     border-style: solid;
     transform: translate(10px, -10px);
-    transition: 0.1s;
+    transition: 0.2s;
+    transition-delay: 0.1s;
 }
+
 
 p {
     display: block;
@@ -112,7 +114,11 @@ button:focus {
     justify-content: space-around;
 }
 
-.Join-button {
+.small-buttons {
+    display: flex;
+}
+
+.small-button {
     position: relative;
     display: block;
     width: 103px;
@@ -121,17 +127,29 @@ button:focus {
     font-family: "Inconsolata";
     font-size: 18px;
     color: white;
-
-    background-color: #E94560;
     border-radius: 3px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    margin: 5px;
 }
-
-.Join-button:hover {
+#sign-up-button {background-color: #E94560;}
+#sign-up-button:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 0px 15px #E94560;
+    transition: 0.3s;  
+}
+#sign-in-button {
+    color: #000000;
+    background: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#sign-in-button:hover {
+    color: rgba(0, 0, 0, 1);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, .4);
     transition: 0.3s;  
 }
 
